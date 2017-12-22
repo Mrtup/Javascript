@@ -9,22 +9,19 @@ console.log (teclas);
 document.addEventListener("keyup", dibujarTeclado);
 
 function dibujarTeclado(evento)
-// FUNCIONES CON  if
+// FUNCIONES CON swich
 {
-    if (evento.keyCode == teclas.UP)
-        {
-            console.log ("tecla arriba");
-        }
-    if (evento.keyCode == teclas.DOWN)
-        {
-            console.log ("tecla abajo");
-        }
-    if (evento.keyCode == teclas.LEFT)
-        {
-            console.log ("tecla izquierda");
-        }
-    if (evento.keyCode == teclas.RIGHT)
+    switch (evento.keyCode)
     {
-        console.log ("tecla derecha");
+    case teclas.UP:
+    console.log ("tecla arriba");
+    break;
+    case teclas.LEFT:
+    break;
+    case teclas.RIGHT:
+    break;
+    case teclas.DOWN:
+    console.log ("tecla abajo");
+    break;
     }
 }
