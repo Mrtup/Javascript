@@ -9,6 +9,7 @@ console.log (teclas);
 document.addEventListener("keyup", dibujarTeclado);
 
 function dibujarTeclado(evento)
+// FUNCIONES CON  if
 {
     if (evento.keyCode == teclas.UP)
         {
